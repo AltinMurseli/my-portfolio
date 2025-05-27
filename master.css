@@ -1,0 +1,333 @@
+body {
+  margin: 0;
+  background-color: bisque;
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 200;
+}
+
+#introduction {
+  background-color: #fbc02d;
+  color: #000000;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#introduction h1 {
+  font-size: 100px;
+
+  margin-bottom: 0px;
+}
+#introduction h1 span {
+  margin-bottom: 0em;
+}
+#introduction p {
+  font-size: 40px;
+  /* border: 5px solid red; */
+}
+#introduction img {
+  width: 600px;
+  height: 750px;
+  border-radius: 5%;
+  object-fit: cover;
+
+  margin-top: -600px;
+  margin-left: auto;
+  margin-right: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#introduction img {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+#introduction button {
+  font-size: 1.1rem;
+  background-color: #000;
+  color: #fbc02d;
+  border: 2px solid #fbc02d;
+  padding: 14px 28px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#introduction button a {
+  text-decoration: none;
+  color: #fbc02d;
+}
+#introduction button:hover {
+  background-color: #222;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* #about-me { */
+/* background-color: #fff8e1;
+  /* border: 5px solid green; */
+/* display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px; */
+/* } */
+
+#about-me {
+  background-color: rgb(255, 248, 225);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3rem 4rem;
+}
+
+#about-me h3 {
+  font-size: 3.5rem;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+#about-me h3::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #ffca28;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+#about-me > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+#about-me .bio-block,
+.skills-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  background-color: #fff8e1;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+#about-me .bio-block p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.8;
+  color: #222222;
+  text-align: left;
+  margin: 0;
+}
+
+#about-me .bio-block button {
+  margin-top: 15px;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: #fff8e1;
+  background-color: #222;
+  border-radius: 50px;
+  border: 2px solid #fff8e1;
+  padding: 14px 28px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#about-me .bio-block button:hover {
+  cursor: pointer;
+  border-color: #ffca28;
+  transition: color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-container {
+  background-color: #fff8e1;
+}
+
+#my-skills {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+}
+
+#my-skills ul {
+  flex: 1;
+  background-color: #fff8e1;
+  padding: 1.5rem;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#my-skills ul li {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  letter-spacing: 0.5px;
+  color: #333;
+}
+
+#my-skills ul li:first-child {
+  font-size: 1.4rem;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+#my-skills ul li:first-child::after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 3px;
+  background-color: #ffca28;
+  margin: 0.5rem auto 0 auto;
+  border-radius: 2px;
+}
+
+#projects {
+  padding: 3rem 4rem;
+  background-color: #fcecc9;
+}
+
+#projects h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  color: #222;
+}
+
+#projects h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #ffca28;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.project-info p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+#footer {
+  background-color: #fff8e1;
+  padding: 2rem 4rem;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 300;
+  color: #333;
+  border-top: 3px solid #ffca28;
+}
+
+#footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  text-align: center;
+}
+
+#footer p {
+  font-size: 1rem;
+  margin: 0;
+  flex: 1 1 200px;
+}
+
+#footer nav {
+  display: flex;
+  gap: 2rem;
+  flex: 2 1 300px;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#footer nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+#footer nav a:hover {
+  color: #ffca28;
+  text-decoration: underline;
+}
+
+#footer .contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 2 1 200px;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+  text-align: right;
+}
+
+#footer .contact-info a,
+#footer .contact-info span {
+  color: #222;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+#footer .contact-info a:hover {
+  color: #ffca28;
+  text-decoration: underline;
+}
