@@ -11,55 +11,72 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/x-icon" href="imgs/favicon.png" />
-    <title>Altin Murseli</title>
+    <title>Altin Murseli | Web Developer</title>
   </head>
   <body>
+    <nav class="navbar">
+      <div class="nav-content">
+        <a href="#introduction" class="logo">AM</a>
+        <div class="nav-links">
+          <a href="#about-me">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a href="#" id="download-cv" class="resume-btn">Resume</a>
+        </div>
+      </div>
+    </nav>
+
     <section id="introduction">
+      <p class="greeting">Hi, my name is</p>
       <h1>
-        <span>Altin</span><br />
-        <span>Murseli</span>
+        <span>Altin Murseli</span>
+        <span>I build things for the web.</span>
       </h1>
       <p>
-        Aspiring web developer excited to land my first job
-        <br /><span>and start building cool stuff.</span>
+        I'm a web developer specializing in building exceptional digital experiences.
+        Currently, I'm focused on building accessible, human-centered products.
       </p>
-      <button><a href="#projects">VIEW WORK</a></button>
-      <img src="./imgs/altumcode-PNbDkQ2DDgM-unsplash.jpg" alt="My Macbook" />
+      <button><a href="#projects">View My Work</a></button>
     </section>
 
     <section id="about-me">
-      <h3>About me.</h3>
+      <h3>About Me</h3>
       <div>
         <div class="bio-block">
           <p>
-            Enthusiastic Computer Science and Engineering undergraduate with a
-            strong foundation in software development. Currently focused on
-            modern web development technologies including JavaScript, React, and
-            Node.js. Skilled in building responsive, user-centric web
-            applications and eager to apply knowledge in real-world projects.
+            Hello! I'm Altin, a passionate web developer with a strong foundation in software development.
+            My journey in tech began with a curiosity for creating things that live on the internet.
+            I enjoy the process of turning complex problems into simple, beautiful, and intuitive solutions.
           </p>
-          <button id="download-cv">DOWNLOAD CV</button>
+          <p>
+            When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects,
+            or sharing my knowledge through technical writing. I'm always eager to learn and grow in this ever-evolving field.
+          </p>
+          <button id="download-cv">Download Resume</button>
         </div>
 
         <div class="skills-container">
           <section id="my-skills">
             <ul>
-              <li>Front-end</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JS</li>
+              <li>Frontend Development</li>
+              <li>HTML5 & CSS3</li>
+              <li>JavaScript (ES6+)</li>
+              <li>React.js</li>
+              <li>Responsive Design</li>
             </ul>
             <ul>
-              <li>Back-end</li>
+              <li>Backend Development</li>
               <li>Node.js</li>
               <li>Express.js</li>
+              <li>RESTful APIs</li>
+              <li>Database Design</li>
             </ul>
             <ul>
-              <li>Others</li>
-
+              <li>Tools & Others</li>
+              <li>Git & GitHub</li>
               <li>MySQL</li>
               <li>Figma</li>
-              <li>GitHub</li>
+              <li>VS Code</li>
             </ul>
           </section>
         </div>
@@ -67,49 +84,92 @@
     </section>
 
     <section id="projects">
-      <h2>Projects</h2>
+      <h2>Featured Projects</h2>
 
       <div class="project">
-        <img src="./imgs/project1.jpg" alt="Project 1 screenshot" />
+        <img src="./imgs/notes-app.jpg" alt="Notes Application" />
         <div class="project-info">
+          <p class="project-category">Featured Project</p>
           <h3>Notes Application</h3>
-          <p>
-            A lightweight notes application that securely stores your important
-            thoughts and reminders directly in your browser's Local Storage.
-            Built with HTML, CSS and plain JS.
-          </p>
+          <div class="project-description">
+            <p>
+              A modern notes application that securely stores your thoughts and reminders.
+              Built with a focus on user experience and clean design.
+            </p>
+          </div>
+          <ul class="project-tech">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Local Storage</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener noreferrer">View Live</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+          </div>
         </div>
       </div>
 
       <div class="project">
-        <img src="imgs/project2.png" alt="Project 2 screenshot" />
+        <img src="imgs/drawing-app.jpg" alt="Drawing Board Application" />
         <div class="project-info">
+          <p class="project-category">Featured Project</p>
           <h3>Drawing Board Application</h3>
-          <p>
-            Designed and implemented a Drawing Board web application utilizing
-            the HTML5 Canvas API. Developed interactive features enabling users
-            to create, modify, and manipulate graphical elements with
-            JavaScript.
-          </p>
+          <div class="project-description">
+            <p>
+              An interactive drawing board that lets users create and manipulate graphics.
+              Features include multiple tools, color picker, and save functionality.
+            </p>
+          </div>
+          <ul class="project-tech">
+            <li>HTML5 Canvas</li>
+            <li>JavaScript</li>
+            <li>CSS3</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener noreferrer">View Live</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+          </div>
         </div>
       </div>
 
       <div class="project">
-        <img src="imgs/project3.jpg" alt="Project 3 screenshot" />
+        <img src="imgs/jokes-app.jpg" alt="Jokes Application" />
         <div class="project-info">
-          <h3>Rendering Jokes Application</h3>
-          <p>
-            Developed a dynamic and responsive jokes-rendering web application
-            using HTML, CSS, and JavaScript. Implemented a user-friendly
-            interface to display an array of jokes fetched from an external API.
-          </p>
+          <p class="project-category">Featured Project</p>
+          <h3>Jokes Application</h3>
+          <div class="project-description">
+            <p>
+              A dynamic web application that fetches and displays jokes from an external API.
+              Features include joke categories, favorites, and sharing capabilities.
+            </p>
+          </div>
+          <ul class="project-tech">
+            <li>JavaScript</li>
+            <li>REST API</li>
+            <li>CSS3</li>
+            <li>Local Storage</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener noreferrer">View Live</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Source Code</a>
+          </div>
         </div>
       </div>
     </section>
 
+    <section id="contact">
+      <h2>Get In Touch</h2>
+      <p>
+        I'm currently looking for new opportunities. Whether you have a question
+        or just want to say hi, I'll try my best to get back to you!
+      </p>
+      <a href="mailto:murselialtin1@gmail.com" class="contact-btn">Say Hello</a>
+    </section>
+
     <footer id="footer">
       <div class="footer-content">
-        <p>© 2025 Altin Murseli. All rights reserved.</p>
+        <p>© 2024 Altin Murseli. All rights reserved.</p>
 
         <nav>
           <a href="#introduction">Home</a>
@@ -119,13 +179,8 @@
         </nav>
 
         <div class="contact-info">
-          <a
-            href="https://github.com/yourgithub"
-            target="_blank"
-            rel="noopener noreferrer"
-            >GitHub</a
-          >
-          <span>+383 45 606 351</span>
+          <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a href="mailto:murselialtin1@gmail.com">murselialtin1@gmail.com</a>
         </div>
       </div>
