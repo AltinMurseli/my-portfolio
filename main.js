@@ -53,3 +53,26 @@ projects.forEach(project => {
     project.querySelector('img').style.transform = 'scale(1)';
   });
 });
+
+// Enhanced fade-in animation for sections, cards, and project images
+function revealOnScroll() {
+  const fadeEls = document.querySelectorAll('.fade-in-section, .fade-in-up, .stagger-fade, .slide-in-left, .slide-in-right, .scale-in, .bounce-in');
+  const observer = new window.IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Stagger children if present
+        if (entry.target.classList.contains('stagger-parent')) {
+          const children = entry.target.querySelectorAll('.stagger-fade, .slide-in-left, .slide-in-right');
+          children.forEach((child, idx) => {
+            setTimeout(() => child.classList.add('is-visible'), idx * 120);
+          });
+        }
+        entry.target.classList.add('is-visible');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  fadeEls.forEach(el => observer.observe(el));
+}
+
+document.addEventListener('DOMContentLoaded', revealOnScroll);

@@ -557,3 +557,148 @@ body {
     padding: 20px 20px 40px 20px;
   }
 }
+
+/* Fade-in animation for sections */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.23, 1, 0.32, 1), transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  will-change: opacity, transform;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Fade-in for project images */
+.project img.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.23, 1, 0.32, 1), transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.project img.fade-in-up.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Staggered fade-in for cards */
+.stagger-fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(0.23, 1, 0.32, 1), transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.stagger-fade.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Slide-in from left */
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.7s cubic-bezier(0.23, 1, 0.32, 1), transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.slide-in-left.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Slide-in from right */
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.7s cubic-bezier(0.23, 1, 0.32, 1), transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.slide-in-right.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Scale-in for buttons or icons */
+.scale-in {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.6s cubic-bezier(0.23, 1, 0.32, 1), transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.scale-in.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Bounce-in for contact button */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.bounce-in {
+  opacity: 0;
+  transform: scale(0.7);
+}
+.bounce-in.is-visible {
+  opacity: 1;
+  animation: bounceIn 0.7s forwards;
+}
+
+/* Project card hover effect */
+.project.stagger-fade {
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.project.stagger-fade:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 12px 32px rgba(100,255,218,0.10), 0 2px 8px rgba(0,0,0,0.10);
+}
+
+/* Skill card hover effect */
+#my-skills ul.stagger-fade {
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+#my-skills ul.stagger-fade:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 24px rgba(100,255,218,0.10), 0 1px 4px rgba(0,0,0,0.10);
+}
+
+/* Button hover pop effect */
+button, .contact-btn, .resume-btn {
+  transition: transform 0.2s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+button:hover, .contact-btn:hover, .resume-btn:hover {
+  transform: scale(1.06);
+  box-shadow: 0 4px 16px rgba(100,255,218,0.15);
+}
+
+/* Contact button extra color effect */
+.contact-btn:hover {
+  background-color: #64ffda;
+  color: #0a192f;
+  border-color: #64ffda;
+}
+
+.animated-gradient-text {
+  background: linear-gradient(270deg, #64ffda, #00cfff, #a084ee, #64ffda);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  animation: gradientMove 3s linear infinite;
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
